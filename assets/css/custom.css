@@ -33,6 +33,7 @@
 
 .post-head {
 	margin-bottom: 0;
+	background-color: none;
 	
     animation-name: "headerBg";
 	animation-duration: 30s;
