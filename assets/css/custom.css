@@ -1,16 +1,50 @@
-/*.main-header {
-    position: fixed;
-    width: 25%;
-    height: 100%;
-    margin-bottom: 0;
-    z-index: 11;
-    top: 0;
-    
-    -webkit-transition: -webkit-transform 0.3s ease,
-                        opacity 0s ease 0s;
-            transition: transform 0.3s ease,
-                        opacity 0s ease 0s;
+@keyframes headerBg {
+	0% {
+		-webkit-transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(1.05);
+	}
+	100% {
+		-webkit-transform: scale(1);
+	}
 }
+
+@-webkit-keyframes headerBg {
+	0% {
+		-webkit-transform: scale(1);
+	}
+	50% {
+		-webkit-transform: scale(1.05);
+	}
+	100% {
+		-webkit-transform: scale(1);
+	}
+}
+
+.main-header-container {
+    width: 100%;
+    height: 65vh;
+    overflow: hidden;
+	position: relative;
+    display: table;
+	margin-bottom: 5rem;
+}
+
+.main-header {
+	margin-bottom: 0;
+	
+    animation-name: "headerBg";
+	animation-duration: 30s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+
+    -webkit-animation-name: "headerBg";
+	-webkit-animation-duration: 30s;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+}
+/*
 
 .nav {
     left: 0;
