@@ -45,6 +45,19 @@
 	-webkit-animation-timing-function: ease-in-out;
 	-webkit-animation-iteration-count: infinite;
 }
+
+.main-header.index-header {
+	width: 40vh;
+	float: left;
+	position: fixed;
+	height: 100%;
+	max-height: 100%;
+}
+
+.post {
+	margin: 0 auto;
+    padding: 4rem 0;
+}
 /*
 
 .nav {
