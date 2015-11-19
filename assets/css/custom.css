@@ -90,6 +90,7 @@ body {
 	height: 20vh;
 	background-size: cover;
 	background-repeat: no-repeat;
+	margin-bottom: 0.4em;
 }
 
 .index .post-meta {
