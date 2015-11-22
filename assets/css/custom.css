@@ -99,6 +99,10 @@ body {
     bottom: 12px;
 }
 
+.index .post section {
+	height: 30vh;
+	overflow: hidden;
+}
 
 /*
 
