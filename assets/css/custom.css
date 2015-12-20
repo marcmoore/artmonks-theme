@@ -73,12 +73,14 @@ body {
 .index .post {
 	margin: 0 auto;
     padding: 4rem;
-	width: 40vh;
-	height: 62vh;
+	width: 50%;
+	height: 54vh;
+	max-width: none;
 	float: left;
 	border-right: #EBF2F6 1px solid;
 	border-bottom: #EBF2F6 1px solid;
 	transition-duration: 300ms;
+	box-sizing: border-box;
 }
 
 .index .post:hover {
@@ -100,7 +102,7 @@ body {
 }
 
 .index .post section {
-	height: 30vh;
+	height: 13vh;
 	overflow: hidden;
 }
 
