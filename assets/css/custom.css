@@ -53,7 +53,7 @@ body {
 }
 
 .main-header.index-header {
-	width: 40vh;
+	width: 300px;
 	float: left;
 	position: fixed;
 	height: 100%;
@@ -61,7 +61,7 @@ body {
 }
 
 .index.content {
-	margin-left: 40vh;
+	margin-left: 300px;
 }
 
 .article-wrapper::after {
@@ -87,6 +87,8 @@ body {
 	.index .post {
 		width: 100%;
 		height: auto;
+		padding: 4rem 24rem 4rem 4rem;
+		position: relative;
 	}
 }
 
@@ -107,6 +109,16 @@ body {
 	margin-bottom: 0.4em;
 }
 
+@media screen and (max-width: 1280px){
+	.index .post-cover {
+		width: 28vh;
+		height: 32vh;
+		position: absolute;
+		right: 2em;
+		background-position: 50%;
+	}
+}
+
 .index .post-meta {
     margin: 0; 
     position: absolute;
@@ -116,6 +128,12 @@ body {
 .index .post section {
 	height: 13vh;
 	overflow: hidden;
+}
+
+@media screen and (max-width: 1280px){
+	.index .post section {
+		height: 27vh;
+	}
 }
 
 /*
