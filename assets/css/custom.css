@@ -107,6 +107,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-bottom: 0.4em;
+	background-position: 50%;
 }
 
 @media screen and (max-width: 1280px){
