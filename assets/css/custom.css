@@ -141,7 +141,7 @@ body {
 
 @media only screen and (max-width: 1280px){
 	.index .post-cover {
-		width: 28vh;
+		width: 26vh;
 		height: 32vh;
 		position: absolute;
 		right: 2em;
