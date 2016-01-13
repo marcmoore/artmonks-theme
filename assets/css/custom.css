@@ -208,6 +208,15 @@ body.home-template.nav-opened .main-header {
     transform: translate3D(-240px, 0, 0);
 }
 
+.site-footer {
+	margin-left: 300px;
+}
+
+@media only screen and (max-width: 720px) {
+	.site-footer {
+		margin-left: 0;
+	}
+}
 /*
 
 .nav {
