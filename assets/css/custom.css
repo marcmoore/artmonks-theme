@@ -252,7 +252,7 @@ body.post-template.nav-opened .nav-cover {
 	right: 0;
 }
 
-.site-footer {
+body.home-template .site-footer {
 	margin-left: 300px;
 }
 
