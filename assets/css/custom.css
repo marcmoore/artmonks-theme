@@ -10,25 +10,25 @@ body {
 
 @keyframes headerBg {
 	0% {
-		-webkit-transform: scale(1);
+		transform: scale(1) rotate(0deg);
 	}
 	50% {
-		-webkit-transform: scale(1.05);
+		transform: scale(1.05) rotate(1.2deg);
 	}
 	100% {
-		-webkit-transform: scale(1);
+		transform: scale(1) rotate(0deg);
 	}
 }
 
 @-webkit-keyframes headerBg {
 	0% {
-		-webkit-transform: scale(1);
+		-webkit-transform: scale(1) rotate(0deg);
 	}
 	50% {
-		-webkit-transform: scale(1.05);
+		-webkit-transform: scale(1.05) rotate(1.2deg);
 	}
 	100% {
-		-webkit-transform: scale(1);
+		-webkit-transform: scale(1)rotate(0deg);
 	}
 }
 
