@@ -212,13 +212,13 @@ body.home-template.nav-opened .main-header {
     transform: translate3D(-240px, 0, 0);
 }
 
-body.post-template .nav {
+body.post-template .nav, body.author-template .nav {
 	opacity: 1;
 	right: auto;
 	left: 0;
 }
 
-body.post-template.nav-opened .nav {
+body.post-template.nav-opened .nav, body.author-template.nav-opened .nav {
     -webkit-transition: -webkit-transform 0.3s ease, opacity 0s ease 0s;
     transition: transform 0.3s ease, opacity 0s ease 0s;
     -webkit-transform: translate3D(0, 0, 0);
@@ -226,24 +226,24 @@ body.post-template.nav-opened .nav {
     transform: translate3D(0, 0, 0);
 }
 
-body.post-template.nav-closed .nav {
+body.post-template.nav-closed .nav, body.author-template.nav-closed .nav {
     -webkit-transform: translate3D(-240px, 0, 0);
     -ms-transform: translate3D(-240px, 0, 0);
     transform: translate3D(-240px, 0, 0);
 }
 
-body.post-template .menu-button {
-	float: none;
+body.post-template .menu-button, body.author-template .menu-button {
+	float: left;
 }
 
-body.post-template.nav-opened .menu-button {
+body.post-template.nav-opened .menu-button, body.author-template.nav-opened .menu-button {
 	-webkit-transform: translate3D(0, 0, 0);
     -ms-transform: translate3D(0, 0, 0);
     transform: translate3D(0, 0, 0);
     transition: all 0.3s ease;
 }
 
-body.post-template.nav-opened .menu-button .word {
+body.post-template.nav-opened .menu-button .word, body.author-template.nav-opened .menu-button .word {
 	opacity: 1;
 }
 
