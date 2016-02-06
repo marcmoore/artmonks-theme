@@ -199,7 +199,7 @@ body.home-template.nav-closed .nav {
     transform: translate3D(0, 0, 0);
 }
 
-.nav-opened .nav-cover {
+body.nav-opened .nav-cover {
 	left: 240px;
 	right: 0;
 }
