@@ -134,6 +134,15 @@ body {
 .index .post-title {
 	max-height: 13vh;
 	overflow: hidden;
+	transition-duration: 300ms;
+}
+
+.index .post:hover .post-title {
+	background: rgba(220, 20, 60, 0.8);
+}
+
+.index .post:hover .post-title a {
+	color: #fff;
 }
 
 .index .post-cover {
