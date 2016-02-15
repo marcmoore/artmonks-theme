@@ -274,6 +274,7 @@ body.author-template .post-cover {
 	height: 350px;
 	position: relative;
 	display: table;
+	background-size: cover;
 }
 
 body.author-template .post-cover .post-header {
