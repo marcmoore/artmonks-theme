@@ -314,6 +314,21 @@ body.author-template .post-cover:hover .post-header {
 	opacity: 0;
 }
 
+.elevator {
+    text-align: center;
+    cursor: pointer;
+    width: 140px;
+    margin: auto;
+}
+
+.elevator svg {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
 /*
 
 .nav {

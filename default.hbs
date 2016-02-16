@@ -21,6 +21,8 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/custom.css"}}" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
 
+    <script src="{{asset "js/elevator.min.js"}}"></script>
+
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
@@ -49,6 +51,18 @@
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+    <script>
+    
+        // Simple elevator usage.
+        var elementButton = document.querySelector(".elevator");
+        var elevator = new Elevator({
+            element: elementButton,
+            mainAudio: "{{asset 'music/elevator-music.mp3'}}",
+            endAudio:  "{{asset 'music/ding.mp3'}}"
+        });
+    
+    </script>
 
 </body>
 </html>
