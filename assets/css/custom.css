@@ -270,6 +270,10 @@ body.home-template .site-footer {
 	}
 }
 
+body.author-template .author-profile {
+	max-width: 910px;
+}
+
 body.author-template .post-cover {
 	height: 350px;
 	position: relative;
@@ -312,6 +316,18 @@ body.author-template .post-cover:hover .post-excerpt {
 
 body.author-template .post-cover:hover .post-header {
 	opacity: 0;
+}
+
+body.author-template .author-gallery {
+	width: 100%;
+	height: 300px;
+}
+
+body.author-template .author-gallery .galleryItem {
+	width: 25%;
+	height: 100px;
+	background-size: contain;
+	float: left;
 }
 
 .elevator {
