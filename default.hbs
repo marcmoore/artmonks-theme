@@ -67,9 +67,19 @@
             gallery = authorGallerys[authorName];
         console.log(authorName);
         for (var i=0; i< gallery.length; i++){
-            gallerys = gallerys + "<div class='galleryItem' style='background-image:url(" + gallery[i].cover + ");' data-url='" + gallery[i].images[0] + "'><div class='galleryItemMask'></div></div>";
+            gallerys = gallerys + "<div class='gallery-item' style='background-image:url(" + gallery[i].cover + ");' data-url='" + gallery[i].images[0] + "'><div class='gallery-item-mask'></div></div>";
         }
         $(".author-gallery").append(gallerys);
+        
+        $(".gallery-item").click(function(){
+            $(".author-gallery-content").addClass("show");
+            $(".author-gallery-image-container").addClass("show");
+        });
+        
+        $(".author-gallery-content").click(function(){
+            $(".author-gallery-content").removeClass("show");
+            $(".author-gallery-image-container").removeClass("show");
+        });
 
     </script>
 
