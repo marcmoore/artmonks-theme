@@ -67,7 +67,7 @@
             gallery = authorGallerys[authorName];
         console.log(authorName);
         for (var i=0; i< gallery.length; i++){
-            gallerys = gallerys + "<div class='galleryItem' style='background-image:url(" + gallery[i].cover + ");'></div>";
+            gallerys = gallerys + "<div class='galleryItem' style='background-image:url(" + gallery[i].cover + ");' data-url='" + gallery[i].images[0] + "'><div class='galleryItemMask'></div></div>";
         }
         $(".author-gallery").append(gallerys);
 
