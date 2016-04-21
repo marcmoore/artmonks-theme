@@ -67,21 +67,22 @@
         var gallerys = "",
             authorName = "{{author.name}}".replace(/\s/g,""),
             gallery = authorGallerys[authorName];
-        console.log(authorName);
-        for (var i=0; i< gallery.length; i++){
-            gallerys = gallerys + "<div class='gallery-item' style='background-image:url(" + gallery[i].cover + ");' data-url='" + gallery[i].images[0] + "'><div class='gallery-item-mask'></div></div>";
+        
+        if (gallery.switch){
+            for (var i=0; i< gallery.items.length; i++){
+                gallerys = gallerys + "<a class='gallery-item' style='background-image:url(" + gallery.items[i].cover + ");' data-lightbox='imageSet' href='" + gallery.items[i].images[0] + "'><div class='gallery-item-mask'></div></a>";
+            }
+            $(".author-gallery").append(gallerys);
+    
+            lightbox.option({
+                "resizeDuration": 200,
+                "positionFromTop": 100,
+                "wrapAround": true
+            });
+            
+            $(".author-gallery").show();
         }
-        $(".author-gallery").append(gallerys);
-        
-        $(".gallery-item").click(function(){
-            $(".author-gallery-content").addClass("show");
-            $(".author-gallery-image-container").addClass("show");
-        });
-        
-        $(".author-gallery-content").click(function(){
-            $(".author-gallery-content").removeClass("show");
-            $(".author-gallery-image-container").removeClass("show");
-        });
+
 
     </script>
 

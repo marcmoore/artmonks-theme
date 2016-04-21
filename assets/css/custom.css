@@ -321,6 +321,7 @@ body.author-template .post-cover:hover .post-header {
 body.author-template .author-gallery {
 	width: 100%;
 	height: 300px;
+	display: none;
 }
 
 body.author-template .author-gallery .gallery-item {
@@ -330,6 +331,7 @@ body.author-template .author-gallery .gallery-item {
 	float: left;
 	position: relative;
 	cursor: pointer;
+	display: block;
 }
 
 body.author-template .author-gallery .gallery-item .gallery-item-mask {
@@ -343,42 +345,6 @@ body.author-template .author-gallery .gallery-item .gallery-item-mask {
 
 body.author-template .author-gallery .gallery-item:hover .gallery-item-mask {
     opacity: 1;
-}
-
-body.author-template .author-gallery-content {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.5);
-	z-index: -1;
-	top: 0;
-	left: 0;
-	transition-duration: 300ms;
-	opacity: 0;
-}
-
-body.author-template .author-gallery-content.show {
-	z-index: 3;
-	opacity: 1;
-}
-
-body.author-template .author-gallery-image-container {
-	width: 710px;
-	height: 700px;
-	background: rgba(255, 255, 255, 0.9);
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	margin-top: -350px;
-	margin-left: -355px;
-	z-index: -1;
-	transition-duration: 300ms;
-	opacity: 0;
-}
-
-body.author-template .author-gallery-image-container.show {
-	z-index: 3;
-	opacity: 1;
 }
 
 .elevator {
