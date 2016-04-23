@@ -336,7 +336,7 @@ body.author-template .author-gallery .gallery-item {
     margin-bottom: 4px;
 }
 
-body.author-template .author-gallery .gallery-item:last-child {
+body.author-template .author-gallery .gallery-item:nth-child(4n) {
 	margin-right: 0;
 }
 
