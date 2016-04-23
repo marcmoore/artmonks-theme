@@ -325,19 +325,20 @@ body.author-template .author-gallery {
 }
 
 body.author-template .author-gallery .gallery-item {
-	width: 224.5px;
+	/*width: 224.5px;*/
+	width: 25%;
 	height: 100px;
 	background-size: cover;
 	float: left;
 	position: relative;
 	cursor: pointer;
 	display: block;
-	margin-right: 4px;
-    margin-bottom: 4px;
+	/*margin-right: 4px;
+    margin-bottom: 4px;*/
 }
 
 body.author-template .author-gallery .gallery-item:nth-child(4n) {
-	margin-right: 0;
+	/*margin-right: 0;*/
 }
 
 body.author-template .author-gallery .gallery-item .gallery-item-mask {
