@@ -136,7 +136,7 @@ a {
 }
 
 .index .post-title {
-	max-height: 13vh;
+	max-height: 11vh;
 	overflow: hidden;
 	transition-duration: 300ms;
 }
